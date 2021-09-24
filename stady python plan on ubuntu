@@ -1,7 +1,22 @@
 安装虚拟机-ok
+
 安装ubuntu-ok
+
 注册Github-ok
-ubuntu上安装github
+
+ubuntu上安装github-ok
+虚拟机上安装git会出现问题：Temporary failure resolving 'us.archive.ubuntu.com'原因是DNS没有配置
+解决方法：
+1、配置DNS
+sudo vi /etc/resolv.conf
+2、添加DNS
+nameserver 202.96.134.133
+nameserver 8.8.8.8
+3、保存退出
+：wq!
+4、不用重启，继续安装
+sudo apt install git
+
 系统安装python-ok  python3 3.9.5
 直接在控制台编码-ok  hello world
 使用vim编程
